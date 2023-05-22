@@ -17,7 +17,7 @@ const Card = ({ theme = "dark", rating = 3.7, drink }) => {
         <div className="card-header">
           <div className="stars">
             <img src={star} alt="star" />
-            <span>{rating}</span>
+            <span className={`card ${theme ? theme : ""}`}>{rating}</span>
           </div>
 
           <div className="more">
