@@ -1,0 +1,42 @@
+.box-container {
+  display: flex;
+  margin-bottom: 10px;
+
+  & img {
+    width: 150px;
+  }
+}
+.frame {
+  overflow: hidden;
+}
+
+.button-2-container {
+  display: flex;
+  justify-content: space-between;
+  width: 25px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.button-2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px;
+  background-color: #5c5c60;
+
+  &.active {
+    width: 5px;
+    height: 5px;
+    background-color: #3a270a;
+  }
+
+  &.dark {
+    background-color: #606063;
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}

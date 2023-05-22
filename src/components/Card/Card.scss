@@ -1,0 +1,96 @@
+.card {
+  border-radius: 8px;
+  max-width: 200px;
+  box-sizing: border-box;
+  padding: 14px 8px 12px;
+  margin-left: 500px;
+  margin-top: 200px;
+
+  &-content {
+  }
+
+  &-header {
+    position: relative;
+  }
+
+  .footer {
+    padding: 4px 8px;
+    background-color: #a28b6e;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    & .country {
+      & img {
+        margin-right: 6px;
+      }
+    }
+
+    &.dark {
+      background-color: #2e2e30;
+    }
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & span {
+      margin-left: 4px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  .more {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+
+    & svg {
+      cursor: pointer;
+      margin-bottom: 7px;
+    }
+  }
+
+  .carousel {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    color: #747474;
+    margin-bottom: 21px;
+
+    & .title {
+      color: #000;
+      &.dark {
+        color: #fff;
+      }
+    }
+
+    & .description {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &.dark {
+    background-color: #1c1c1e;
+  }
+}
